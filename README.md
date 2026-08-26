@@ -8,8 +8,7 @@ A proposta do projeto é transformar o currículo tradicional em uma experiênci
 
 O projeto está publicado e pode ser acessado diretamente pela internet através da Vercel:
 
-Acessar Currículo Web: https://pagecamillauchoa.vercel.app/
-
+Acessar Currículo Web
 
 ✨ Funcionalidades
 Exibição de informações pessoais e profissionais
@@ -17,18 +16,23 @@ Organização das informações em seções
 Apresentação da formação acadêmica
 Exibição de habilidades técnicas
 Apresentação de projetos
+Consumo da API oficial do GitHub
+Exibição dinâmica dos repositórios públicos do GitHub
+Atualização automática dos projetos conforme novos repositórios são criados ou atualizados
 Informações de contato e links profissionais
 Navegação simples e intuitiva
 Layout responsivo para diferentes dispositivos
 Interações utilizando JavaScript
 
+A integração com a API do GitHub permite que os projetos apresentados no currículo sejam atualizados dinamicamente, evitando a necessidade de alterar manualmente a página sempre que um novo projeto é desenvolvido.
+
 🛠️ Tecnologias Utilizadas
 HTML5 — estrutura e organização do conteúdo
 CSS3 — estilização, layout e responsividade
-JavaScript — interatividade e comportamento da aplicação
+JavaScript — interatividade, consumo da API e atualização dinâmica dos dados
+GitHub API — integração para consulta e exibição dos repositórios
 Git/GitHub — versionamento e gerenciamento do código
 Vercel — publicação e hospedagem da aplicação
-
 📂 Estrutura do Projeto
 Curriculo-CamillaUchoa-3C/
 │
@@ -39,7 +43,21 @@ Curriculo-CamillaUchoa-3C/
 ├── style.css
 ├── script.js
 └── README.md
+🔗 Integração com a API do GitHub
 
+O projeto utiliza a API oficial do GitHub para buscar informações públicas dos repositórios da autora.
+
+Os dados são carregados dinamicamente pela aplicação, permitindo que a seção de projetos acompanhe a evolução do perfil no GitHub.
+
+Dessa forma, quando novos projetos são publicados ou os repositórios existentes são atualizados, as informações apresentadas no currículo podem ser atualizadas automaticamente a partir dos dados disponíveis no GitHub.
+
+Essa integração também foi utilizada como uma forma prática de aplicar conceitos de:
+
+Consumo de APIs REST
+Requisições HTTP
+Manipulação de dados em JavaScript
+Programação assíncrona
+Integração entre aplicações e serviços externos
 🚀 Como executar localmente
 
 Clone o repositório:
@@ -78,15 +96,21 @@ Este projeto foi desenvolvido com o objetivo de:
 Criar uma presença digital profissional
 Praticar desenvolvimento front-end
 Aplicar conceitos de HTML, CSS e JavaScript
+Praticar o consumo e integração com APIs externas
 Explorar organização de conteúdo e experiência do usuário
 Desenvolver uma aplicação responsiva
 Disponibilizar o currículo profissionalmente na internet
 Criar uma base para futuros projetos e evoluções
+
+Além de apresentar informações profissionais, o projeto funciona como uma aplicação em constante atualização, acompanhando a evolução dos projetos desenvolvidos e publicados no GitHub.
+
 📌 Status do Projeto
 
 Concluído — versão inicial publicada
 
 A aplicação encontra-se disponível online e possui uma estrutura preparada para receber novas funcionalidades, melhorias visuais e otimizações de desempenho.
+
+A integração com a API do GitHub permite que a aplicação acompanhe continuamente a evolução dos projetos publicados no perfil da autora.
 
 🔮 Melhorias Futuras
 
@@ -115,8 +139,3 @@ Este projeto faz parte da minha jornada de aprendizado em desenvolvimento de sof
 📄 Licença
 
 Este projeto foi desenvolvido para fins acadêmicos e profissionais.
-
-## Licença
-
-Este projeto está sob a licença MIT.
-
