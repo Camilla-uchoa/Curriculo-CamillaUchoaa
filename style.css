@@ -76,3 +76,49 @@ ul li{
         visibility: hidden;
     }
 }
+
+/* Projetos carregados pela API do GitHub */
+
+.github-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.github-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.github-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.github-card p {
+    line-height: 1.5;
+}
+
+.github-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+    .github-projects {
+        grid-template-columns: 1fr;
+    }
+}
