@@ -1,84 +1,104 @@
-body{
+body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     max-width: 900px;
     margin: 40px auto;
     background-color: #f4f4f4;
     padding: 30px;
     box-shadow: 0 4px 10px #000000;
     border-radius: 10px;
-
 }
 
-.header{
+/* Cabeçalho */
+.header {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.header p{
-    margin: 2px;
-    color: #3b3b3b;
-
+/* Foto do currículo */
+.header img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
 }
 
-h2{
-    color:rgb(255, 134, 154);
+.header p {
+    margin: 2px;
+    color: #3b3b3b;
+}
+
+h2 {
+    color: rgb(255, 134, 154);
     border-bottom: 2px solid pink;
     padding-bottom: 5px;
     margin-top: 30px;
 }
 
 p,
-li{
+li {
     text-align: justify;
     line-height: 1.6;
 }
 
-ul{
+ul {
     list-style: none;
-
 }
 
-ul li{
-    content: "!.";
-    color:rgb(0, 0, 0);
+ul li {
+    color: rgb(0, 0, 0);
     font-weight: bold;
-
 }
 
-.button{
-    display: flax;
+/* Botão de imprimir */
+.button {
+    display: flex;
     justify-content: flex-end;
 }
 
-#btn-print{
+#btn-print {
     background-color: rgb(255, 134, 154);
-    color:#f4f4f4;
+    color: #f4f4f4;
     border: none;
-    padding: 10px 20px ;
+    padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px ;
-
+    font-size: 16px;
 }
 
-#btn-print:hover{
+#btn-print:hover {
     background-color: rgb(54, 54, 25);
 }
 
-@media print{
-    #btn-print{
-        display: none;
-        visibility: hidden;
-    }
+/* Botão de compartilhar */
+#btn-share {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+    background-color: rgb(255, 134, 154);
+    color: white;
+}
+
+#btn-share:hover {
+    opacity: 0.85;
+}
+
+#share-result {
+    margin-top: 10px;
+    font-size: 14px;
 }
 
 /* Projetos carregados pela API do GitHub */
-
 .github-projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -114,11 +134,41 @@ ul li{
     text-decoration: underline;
 }
 
-
 /* Responsividade */
-
 @media (max-width: 700px) {
+
+    .container {
+        margin: 10px;
+        padding: 20px;
+    }
+
     .github-projects {
         grid-template-columns: 1fr;
     }
+
+    .header img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Impressão */
+@media print {
+
+    #btn-print,
+    #btn-share {
+        display: none;
+    }
+}
+
+.header img {
+    width: 120px !important;
+    height: 120px !important;
+    max-width: 120px !important;
+    max-height: 120px !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
 }

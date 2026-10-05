@@ -2,13 +2,39 @@ Currículo Web — Camilla Uchoa
 
 Versão online e interativa do meu currículo, desenvolvida para apresentar minhas informações profissionais de forma moderna, acessível e dinâmica.
 
+<<<<<<< Updated upstream
 A proposta do projeto é transformar o currículo tradicional em uma experiência navegável, facilitando a visualização das minhas habilidades, projetos, formação e trajetória profissional.
+=======
+A proposta do projeto é transformar o currículo tradicional em uma experiência navegável, facilitando a visualização das minhas habilidades, projetos e trajetória profissional.
+>>>>>>> Stashed changes
 
 🌐 Aplicação Online
 
 O projeto está publicado e pode ser acessado diretamente pela internet através da Vercel:
 
+<<<<<<< Updated upstream
 Acessar Currículo Web
+=======
+* Exibição de informações pessoais e profissionais
+
+* Organização em seções (perfil, formação, habilidades, projetos e contato)
+
+* Navegação simples e intuitiva
+
+* Integração com a API oficial do GitHub para exibição dinâmica dos projetos
+
+* Atualização automática dos projetos públicos do GitHub
+
+* Layout responsivo para diferentes dispositivos
+
+* Compartilhamento do currículo utilizando a Web Share API
+
+* Instalação do site como aplicativo através de PWA
+
+* Funcionamento com Service Worker
+
+* Impressão do currículo em PDF
+>>>>>>> Stashed changes
 
 ✨ Funcionalidades
 Exibição de informações pessoais e profissionais
@@ -26,6 +52,7 @@ Interações utilizando JavaScript
 
 A integração com a API do GitHub permite que os projetos apresentados no currículo sejam atualizados dinamicamente, evitando a necessidade de alterar manualmente a página sempre que um novo projeto é desenvolvido.
 
+<<<<<<< Updated upstream
 🛠️ Tecnologias Utilizadas
 HTML5 — estrutura e organização do conteúdo
 CSS3 — estilização, layout e responsividade
@@ -44,9 +71,27 @@ Curriculo-CamillaUchoa-3C/
 ├── script.js
 └── README.md
 🔗 Integração com a API do GitHub
+=======
+* HTML5 — estrutura da aplicação
+
+* CSS3 — estilização, layout e responsividade
+
+* JavaScript — interatividade e integração com APIs
+
+* Git e GitHub — versionamento e hospedagem do código
+
+* GitHub API — carregamento dinâmico dos projetos
+
+* Web Share API — compartilhamento do currículo
+
+* PWA — possibilidade de instalação como aplicativo
+
+* Service Worker — suporte ao funcionamento da aplicação como PWA
+>>>>>>> Stashed changes
 
 O projeto utiliza a API oficial do GitHub para buscar informações públicas dos repositórios da autora.
 
+<<<<<<< Updated upstream
 Os dados são carregados dinamicamente pela aplicação, permitindo que a seção de projetos acompanhe a evolução do perfil no GitHub.
 
 Dessa forma, quando novos projetos são publicados ou os repositórios existentes são atualizados, as informações apresentadas no currículo podem ser atualizadas automaticamente a partir dos dados disponíveis no GitHub.
@@ -139,3 +184,11 @@ Este projeto faz parte da minha jornada de aprendizado em desenvolvimento de sof
 📄 Licença
 
 Este projeto foi desenvolvido para fins acadêmicos e profissionais.
+=======
+## API Utilizada
+
+O projeto utiliza a API oficial do GitHub para carregar dinamicamente os repositórios públicos da conta.
+
+```text
+https://api.github.com/users/Camilla-uchoa/repos
+>>>>>>> Stashed changes
